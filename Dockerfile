@@ -2,9 +2,7 @@ FROM node:current-slim
 
 WORKDIR /app
 
-COPY ./package.json ./package-lock.json ./src/ ./
-
-CMD ls
+COPY . .
 
 RUN npm install --omit=dev
 
