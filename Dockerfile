@@ -4,9 +4,7 @@ WORKDIR /app
 
 COPY ./package.json ./package-lock.json ./src/ ./
 
-RUN ls
-
-RUN pwd
+CMD ls
 
 RUN npm install --omit=dev
 
