@@ -6,4 +6,8 @@ COPY ./package.json ./package-lock.json ./src/ ./
 
 RUN npm install --omit=dev
 
-RUN npm start
+RUN ls
+
+RUN pwd
+
+ENTRYPOINT npm start
